@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.formtitle {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 60px 40px;
+	gap: 20px;
+}
+.formtitle h2 {
+	font-weight: 700;
+	font-size: 32px;
+	color: var(--mirageblack);
+	font-family: var(--poppins);
+}
+.formtitle p {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--mirageblack);
+	font-family: var(--poppins);
+}
+form {
+	background: linear-gradient(to right, #523682, #6062e8);
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	gap: 20px;
+	border-radius: 24px;
+}
+
+.inputdiv {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.inputrow {
+	display: flex;
+	gap: 30px;
+}
+.inputrow input {
+	width: 100%;
+}
+.textarea-div {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+button {
+	display: flex;
+	align-self: end;
+}
+.checkrow {
+	display: flex;
+	justify-content: space-between;
+}
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+}
+input[type="checkbox"] {
+	width: 1.5rem;
+	height: 1.5rem;
+	background: var(--white);
+}
+
+input[type="checkbox"]:checked {
+	background: var(--white);
+	margin: 0px;
+	position: relative;
+	&:before {
+		content: url(../assets/check.svg);
+		position: absolute;
+		top: 2px;
+		left: 6px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	form {
+		max-width: 90%;
+		align-self: center;
+	}
+}
+@media screen and (min-width: 1024px) {
+	form {
+		width: 40%;
+		align-self: center;
+	}
+}
